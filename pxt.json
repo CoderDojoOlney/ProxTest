@@ -1,0 +1,13 @@
+{
+    "name": "ProxTest",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "description": "Uses 2 Ultrasonic sensors and measures the closest of each",
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ]
+}

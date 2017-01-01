@@ -1,0 +1,267 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="pxt-on-start" id="Y,~iL`_pU4EQ5a0%@(N2" x="20" y="20">
+    <statement name="HANDLER">
+      <block type="variables_set" id="x=.Bu9uVFBZnw~S5{u1)">
+        <field name="VAR">distancea</field>
+        <value name="VALUE">
+          <shadow type="math_number" id="0!)#Q|;zx9A]ALG(G(){">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="variables_set" id="ka0kPc=94nrgl/c,b_|o">
+            <field name="VAR">distanceb</field>
+            <value name="VALUE">
+              <shadow type="math_number" id="=H.L*$fi!0=_T^V(/Wxo">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="device_forever" id="n$nrEY/5+E$/P;~bpR+-" x="72" y="138">
+    <statement name="HANDLER">
+      <block type="device_set_digital_pin" id="D,Ddxh}@k}4$`wG^=fSv">
+        <field name="name">DigitalPin.P2</field>
+        <value name="value">
+          <shadow type="math_number" id="j!;N1{xUltHg{oQ58-[h">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="control_wait_us" id="gBSUe3~=6h#|Zelm92w5">
+            <value name="micros">
+              <shadow type="math_number" id="c!^Hs@xQmqT{LBV4-2y:">
+                <field name="NUM">2</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="device_set_digital_pin" id="vB?36;U.ZV4COJOwm4J^">
+                <field name="name">DigitalPin.P2</field>
+                <value name="value">
+                  <shadow type="math_number" id="DfQV2JtCUd9=BSiAaT1S">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="control_wait_us" id="W951UYw.9k/;dEX1%xQ{">
+                    <value name="micros">
+                      <shadow type="math_number" id="Rzn}JH1xx}jjS@5|q{@F">
+                        <field name="NUM">10</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="device_set_digital_pin" id="J)}w(Kd;?~lTgFMAE[e/">
+                        <field name="name">DigitalPin.P2</field>
+                        <value name="value">
+                          <shadow type="math_number" id="Smcc2}i;)4FIn{B=$q#C">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="Uj1*)exSrB]CLi]m]aP+">
+                            <field name="VAR">distanceb</field>
+                            <value name="VALUE">
+                              <shadow type="math_number">
+                                <field name="NUM">0</field>
+                              </shadow>
+                              <block type="math_arithmetic" id="=jn/-Nog9:fT|%f1h7Zi">
+                                <field name="OP">DIVIDE</field>
+                                <value name="A">
+                                  <shadow type="math_number">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                  <block type="pins_pulse_in" id="3z*IR1qQOfSE?2=m,`1v">
+                                    <field name="name">DigitalPin.P8</field>
+                                    <field name="value">PulseValue.High</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="_3jQ:w%$ly$R4,a)nsdf">
+                                    <field name="NUM">58</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="device_pause" id="C|o=T`|_C4WRa??lvm3W">
+                                <value name="pause">
+                                  <shadow type="math_number" id="7:8,m%~?~HB^w+5Y}=]E">
+                                    <field name="NUM">100</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="device_forever" id="oe;q,.4}A/8:*bb%$N16" x="976" y="116">
+    <statement name="HANDLER">
+      <block type="device_set_digital_pin" id="v?^r,To6X)yl#]N,ewFS">
+        <field name="name">DigitalPin.P0</field>
+        <value name="value">
+          <shadow type="math_number" id="SgV:oR@nt|3i4pe~^*:R">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="control_wait_us" id="WOUs^6Ut#Y+:|).v!@sH">
+            <value name="micros">
+              <shadow type="math_number" id=":C}NYfHWwtkN3T}{[ei]">
+                <field name="NUM">2</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="device_set_digital_pin" id="%UJ_lxmL%2(vIiL/#0c+">
+                <field name="name">DigitalPin.P0</field>
+                <value name="value">
+                  <shadow type="math_number" id="7ZR9D{w`Lq^kJQG63|8K">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="control_wait_us" id="1dz~eJ,OlsE*X81!!Mxr">
+                    <value name="micros">
+                      <shadow type="math_number" id="a[UtuswosYbn(PXsu}+,">
+                        <field name="NUM">10</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="device_set_digital_pin" id="M3|;qBw?P8`~wc[wl?l}">
+                        <field name="name">DigitalPin.P0</field>
+                        <value name="value">
+                          <shadow type="math_number" id="*SFT%wKY[q*T-0nd{+*B">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="variables_set" id="?7%*=@{`tNfKshW{@qh!">
+                            <field name="VAR">distancea</field>
+                            <value name="VALUE">
+                              <shadow type="math_number">
+                                <field name="NUM">0</field>
+                              </shadow>
+                              <block type="math_arithmetic" id="#/a=3Y|FR6[gWX.:=7q`">
+                                <field name="OP">DIVIDE</field>
+                                <value name="A">
+                                  <shadow type="math_number">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                  <block type="pins_pulse_in" id="+ty%m]FMBTVm.P#,kFV:">
+                                    <field name="name">DigitalPin.P1</field>
+                                    <field name="value">PulseValue.High</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <shadow type="math_number" id="n{7tyMO{UJB.{e}FN9!a">
+                                    <field name="NUM">58</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="device_pause" id="LwsvUY9cNWfuWKYd8ceh">
+                                <value name="pause">
+                                  <shadow type="math_number" id="#hogOLMjMG,9:mA#_I~8">
+                                    <field name="NUM">100</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="device_forever" id="90$0|$Z9g|[Vy1iOj[x^" x="88" y="516">
+    <statement name="HANDLER">
+      <block type="controls_if" id="w#@a1w|5:86#=luG8^^Z">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <shadow type="logic_boolean" id="ZL0rEV`js~6lXVU2Q~_}">
+            <field name="BOOL">TRUE</field>
+          </shadow>
+          <block type="logic_compare" id="?e{=$,oZ_ORlwR6MA2b(">
+            <field name="OP">GT</field>
+            <value name="A">
+              <shadow type="math_number" id="Ky[nV:XONp6Y]yQ]]{ft">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id="kj9vB5y=iGL+Bxu#rHTO">
+                <field name="VAR">distancea</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="ckLh${.pZtan$|]$K]_$">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id="sYR)lt(q)0$lycBpD!WD">
+                <field name="VAR">distanceb</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="#.+Y3h_.$JVmkwo.x2;j">
+            <field name="VAR">distance</field>
+            <value name="VALUE">
+              <shadow type="math_number" id="+-P!$!W7EK{H/=dx{dut">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id="cM4L@~ab.g!353eXUX$y">
+                <field name="VAR">distanceb</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="variables_set" id="c@TRN@p8a9#.(Pqe;~JR">
+            <field name="VAR">distance</field>
+            <value name="VALUE">
+              <shadow type="math_number" id="+-P!$!W7EK{H/=dx{dut">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="variables_get" id="!2A}ac=2d%nnD#|~BIU;">
+                <field name="VAR">distancea</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="device_plot_bar_graph" id="@!$Z;._$|JHK-:-PaSEC">
+            <value name="value">
+              <block type="variables_get" id="nlx}|JQC;1p-(Ca0BDf9">
+                <field name="VAR">distance</field>
+              </block>
+            </value>
+            <value name="high">
+              <shadow type="math_number" id="!_B:@Wc%,-SuvX}!)O9Z">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
